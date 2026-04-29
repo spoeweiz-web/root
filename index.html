@@ -54,20 +54,5 @@
 
 
 
-    <script>
-        function updateStatus() {
-            const now = new Date();
-            document.getElementById("status").innerText =
-                "läuft – " + now.toLocaleTimeString();
-        }
-
-        setInterval(updateStatus, 1000);
-        updateStatus();
-
-        setTimeout(() => {
-            location.reload();
-        }, 600000);
-    </script>
-
 </body>
 </html>
