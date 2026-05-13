@@ -67,12 +67,6 @@
 <div id="status">lädt...</div>
 
 <script>
-    /* ⏰ Live Uhr */
-    function updateStatus() {
-        const now = new Date();
-        document.getElementById("status").innerText =
-            "läuft – " + now.toLocaleTimeString();
-    }
 
     setInterval(updateStatus, 1000);
     updateStatus();
